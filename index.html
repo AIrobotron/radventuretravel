@@ -1,38 +1,150 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="theme-color" content="#071019" />
-<title>Rolwaling to Makalu — 47 Day Himalayan Expedition & Traverse</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07131e">
+<title>Rolwaling to Makalu — Nepal 2026</title>
 <style>
-:root{--ink:#081018;--paper:#f4f2ed;--muted:#9aa5ad;--line:#26313a;--red:#a21d1d;--blue:#2452a4;--purple:#563590;--green:#245d45;--max:1500px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit}.hero{background:#071019}.hero img{display:block;width:100%;max-height:930px;object-fit:cover;object-position:top center}.nav{position:sticky;top:0;z-index:20;background:rgba(7,16,25,.96);border-bottom:1px solid #27313a}.navin{max-width:var(--max);margin:auto;display:flex;gap:24px;padding:14px 22px;align-items:center;overflow:auto;white-space:nowrap}.nav a{color:#fff;text-decoration:none;text-transform:uppercase;font-size:12px;font-weight:800;letter-spacing:.16em}.nav a:first-child{margin-right:auto}.wrap{max-width:var(--max);margin:auto;padding:46px 24px}.eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:800;color:#53606a}h2{font-size:clamp(30px,4vw,58px);line-height:.95;margin:8px 0 14px;text-transform:uppercase;letter-spacing:-.025em}.intro{max-width:880px;font-size:18px;line-height:1.6;color:#38434b}.mapgrid{display:grid;grid-template-columns:1.5fr 1fr;gap:18px;margin-top:28px}.panel{background:#0a1219;color:#fff;border:1px solid #27313a}.panelhead{padding:20px 22px;border-bottom:1px solid #27313a}.panelhead h3{margin:0 0 5px;font-size:20px;text-transform:uppercase;letter-spacing:.04em}.panelhead p{margin:0;color:#aeb7be;font-size:14px}.frame{width:100%;height:600px;border:0;display:block;background:#111}.actions{display:flex;gap:10px;flex-wrap:wrap;padding:16px 20px}.button{display:inline-block;padding:13px 18px;border:1px solid #68737b;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:.1em;font-size:11px;font-weight:800}.button:hover{background:#fff;color:#071019}.garmin{min-height:600px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:50px 28px;background:linear-gradient(#101a22,#071019)}.garmin .big{font-size:clamp(28px,4vw,48px);font-weight:900;text-transform:uppercase;max-width:600px}.garmin p{color:#b7c0c6;max-width:580px;line-height:1.55}.today{margin-top:18px;border-top:1px solid #33404a;padding-top:20px;font-size:14px;color:#c7ced3}.itin{padding-top:22px}.regions{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:28px 0}.region{padding:16px 18px;border-top:4px solid}.region b{display:block;text-transform:uppercase}.r1{border-color:var(--blue)}.r2{border-color:var(--red)}.r3{border-color:var(--purple)}.r4{border-color:var(--green)}.days{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#cfd3d5;border:1px solid #cfd3d5}.day{background:#fff;padding:14px 16px;display:grid;grid-template-columns:56px 78px 1fr;gap:10px;align-items:start}.day strong{font-size:13px}.day time{font-size:13px;color:#5e6971}.day span{font-size:14px;line-height:1.35}.day.current{outline:3px solid #111;outline-offset:-3px}.day.current:after{content:'CURRENT DAY';font-size:9px;font-weight:900;letter-spacing:.12em;margin-left:auto}.footer{background:#071019;color:#fff;padding:42px 24px}.footerin{max-width:var(--max);margin:auto;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.footer strong{letter-spacing:.18em;text-transform:uppercase}.footer p{color:#aab3b9;margin:8px 0 0;line-height:1.5}.small{font-size:12px}.fallback{padding:30px;color:#c2c9ce}.fallback a{color:#fff}
-@media(max-width:900px){.mapgrid{grid-template-columns:1fr}.frame,.garmin{height:500px;min-height:500px}.regions{grid-template-columns:1fr 1fr}.days{grid-template-columns:1fr}.hero img{max-height:none}.nav a:first-child{margin-right:0}}
-@media(max-width:520px){.wrap{padding:34px 14px}.regions{grid-template-columns:1fr}.day{grid-template-columns:48px 65px 1fr;padding:12px 10px}.frame,.garmin{height:430px;min-height:430px}.navin{padding:12px 14px;gap:18px}}
+:root{
+ --navy:#07131e;--navy2:#0b1d2b;--paper:#f3f0e9;--white:#fbfaf6;
+ --ink:#101820;--muted:#69747c;--line:#d5d3cc;
+ --blue:#2c5da8;--red:#a52b27;--purple:#60428e;--green:#275f4b;
+ --max:1320px
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif}
+a{color:inherit}.shell{max-width:var(--max);margin:auto;padding:0 28px}
+.top{background:linear-gradient(180deg,#06121d 0%,#0a1b29 100%);color:#fff;border-bottom:1px solid #263746}
+.nav{height:70px;display:flex;align-items:center;gap:26px}.brand{font-size:15px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-right:auto}.nav a{text-decoration:none;color:#d9e0e4;font-size:11px;font-weight:750;letter-spacing:.13em;text-transform:uppercase}.nav a:hover{color:#fff}
+.hero{padding:56px 0 46px;display:grid;grid-template-columns:1.12fr .88fr;gap:58px;align-items:end}
+.kicker{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#aebac2;font-weight:800}.hero h1{font-family:"Arial Narrow",Arial,sans-serif;font-stretch:condensed;font-size:clamp(52px,7vw,96px);line-height:.86;letter-spacing:-.045em;text-transform:uppercase;margin:12px 0 20px;max-width:760px}.hero h1 span{display:block;font-size:.48em;line-height:1.08;letter-spacing:.06em;margin-top:14px}.lead{max-width:720px;color:#c3ccd2;font-size:17px;line-height:1.6}.meta{display:flex;gap:28px;margin-top:30px;flex-wrap:wrap}.meta div{border-left:1px solid #42505a;padding-left:13px}.meta b{display:block;font-size:19px}.meta span{font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#9eabb4}
+.nepal{border-top:1px solid #31414c;padding-top:20px}.nepal svg{width:100%;height:auto;display:block}.nepal .route{stroke:#e6e9ea;stroke-width:2;fill:none;stroke-dasharray:4 5}.nepal .dot{fill:#c3483e}.nepal .label{fill:#cbd3d8;font-size:11px;letter-spacing:.08em}.nepal .outline{fill:none;stroke:#7f909c;stroke-width:1.3}
+.section{padding:68px 0}.section.white{background:var(--white)}.eyebrow{font-size:10px;font-weight:850;letter-spacing:.2em;text-transform:uppercase;color:#6d777e}.section h2{font-family:"Arial Narrow",Arial,sans-serif;font-size:clamp(34px,4vw,56px);line-height:.95;text-transform:uppercase;letter-spacing:-.025em;margin:9px 0 12px}.sub{max-width:760px;color:#58636a;line-height:1.55;margin:0}
+.elev-wrap{margin-top:30px;background:#fff;border:1px solid var(--line);box-shadow:0 12px 35px rgba(18,28,35,.06)}.regionbar{display:grid;grid-template-columns:10fr 10fr 14fr 13fr;border-bottom:1px solid var(--line)}.regionbar div{padding:12px 15px;font-size:10px;font-weight:850;letter-spacing:.11em;text-transform:uppercase;border-right:1px solid var(--line)}.regionbar div:last-child{border-right:0}.rb1{color:var(--blue)}.rb2{color:var(--red)}.rb3{color:var(--purple)}.rb4{color:var(--green)}
+.chart{position:relative;padding:10px 10px 0}.chart svg{display:block;width:100%;height:320px;overflow:visible}.profile{fill:url(#fade);stroke:#183d84;stroke-width:3}.gridline{stroke:#e7e5df;stroke-width:1}.peak{cursor:pointer}.peak circle{fill:#fff;stroke:#17222b;stroke-width:2;transition:.18s}.peak text{font-size:10px;font-weight:800;fill:#17222b;pointer-events:none}.peak:hover circle,.peak.active circle{r:7;fill:#b42b27;stroke:#b42b27}.peak.active text{fill:#9b2420}.tooltip{position:absolute;display:none;z-index:5;background:#07131e;color:#fff;padding:13px 15px;min-width:180px;box-shadow:0 8px 24px rgba(0,0,0,.2);font-size:12px;line-height:1.45;pointer-events:none}.tooltip b{display:block;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px}.tooltip span{color:#c0c9ce}
+.destinations{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}.dest{border:1px solid var(--line);background:#fff;padding:18px;cursor:pointer;transition:.18s;text-align:left;font:inherit}.dest:hover,.dest.active{transform:translateY(-2px);box-shadow:0 9px 24px rgba(15,25,31,.08)}.dest small{font-size:9px;font-weight:850;letter-spacing:.15em;text-transform:uppercase;color:#7b858b}.dest b{display:block;margin-top:6px;font-size:15px}.dest span{display:block;color:#657078;font-size:12px;margin-top:4px}
+.explore{display:grid;grid-template-columns:1.45fr .55fr;gap:18px;margin-top:28px}.mapcard,.livecard{background:#07131e;color:#fff;border:1px solid #22313d}.cardhead{padding:19px 21px;border-bottom:1px solid #263744}.cardhead b{font-size:13px;letter-spacing:.1em;text-transform:uppercase}.cardhead p{margin:5px 0 0;color:#aeb9c0;font-size:12px}.mapframe{display:block;width:100%;height:470px;border:0;filter:saturate(.82) contrast(1.02)}.actions{display:flex;gap:9px;padding:14px 18px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid #65737d;color:#fff;text-decoration:none;padding:11px 15px;font-size:10px;font-weight:850;letter-spacing:.1em;text-transform:uppercase;background:transparent}.btn:hover{background:#fff;color:#07131e}.livebody{min-height:470px;padding:28px 24px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(160deg,#102535,#07131e)}.livebody h3{font-family:"Arial Narrow",Arial,sans-serif;font-size:34px;text-transform:uppercase;line-height:1;margin:0}.livebody p{color:#b6c0c6;line-height:1.55;font-size:13px}.status{border-top:1px solid #3b4a54;padding-top:17px;margin-top:24px}.status .dayno{font-size:42px;font-weight:850}.status .route-day{font-size:13px;line-height:1.5;color:#d3d9dd}
+.itin-tools{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0 18px}.filter{border:1px solid #bbbdb9;background:transparent;padding:9px 12px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;cursor:pointer}.filter.active{background:#0b1720;color:#fff;border-color:#0b1720}
+.days{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.day{background:#fff;border:1px solid #dddcd7;padding:15px;display:grid;grid-template-columns:48px 1fr;gap:12px;cursor:pointer;transition:.15s}.day:hover{border-color:#7f878b;transform:translateY(-1px)}.day.current{outline:2px solid #17232c}.num{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#7a848a}.num b{display:block;font-size:22px;color:#17232c}.day time{font-size:10px;font-weight:800;text-transform:uppercase;color:#7b858b}.day .desc{font-size:13px;line-height:1.4;margin-top:5px}.day .tag{font-size:9px;text-transform:uppercase;letter-spacing:.09em;margin-top:9px;font-weight:850}.tag.r1{color:var(--blue)}.tag.r2{color:var(--red)}.tag.r3{color:var(--purple)}.tag.r4{color:var(--green)}
+footer{background:#06121d;color:#fff;padding:38px 0}.foot{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.foot b{font-size:11px;letter-spacing:.17em;text-transform:uppercase}.foot p{margin:7px 0 0;color:#99a7b0;font-size:12px}
+@media(max-width:900px){.hero,.explore{grid-template-columns:1fr}.hero{gap:32px}.nepal{max-width:600px}.destinations{grid-template-columns:repeat(2,1fr)}.days{grid-template-columns:repeat(2,1fr)}.nav a:not(:first-child){display:none}.mapframe{height:430px}}
+@media(max-width:560px){.shell{padding:0 16px}.hero{padding:38px 0}.hero h1{font-size:52px}.section{padding:48px 0}.destinations,.days{grid-template-columns:1fr}.regionbar div{font-size:8px;padding:10px 6px}.chart svg{height:270px}.mapframe{height:390px}.meta{gap:16px}.livebody{min-height:390px}}
 </style>
 </head>
 <body>
-<header class="hero" id="top"><img src="hero.png" alt="Rolwaling to Makalu 47 day Himalayan expedition elevation overview"></header>
-<nav class="nav"><div class="navin"><a href="#top">Rolwaling to Makalu</a><a href="#route">Route</a><a href="#live">Live Garmin</a><a href="#itinerary">47 Day Itinerary</a></div></nav>
+<header class="top" id="top">
+ <div class="shell">
+  <nav class="nav">
+   <a class="brand" href="#top">Rolwaling to Makalu</a>
+   <a href="#profile">Route profile</a><a href="#map">Map</a><a href="#itinerary">Itinerary</a><a href="https://share.garmin.com/radventuretravel" target="_blank" rel="noopener">Live Garmin</a>
+  </nav>
+  <div class="hero">
+   <div>
+    <div class="kicker">Nepal · 26 September — 11 November 2026</div>
+    <h1>Rolwaling<br>to Makalu<span>47 Day High Himalayan Expedition & Traverse</span></h1>
+    <p class="lead">Chetchet through the Rolwaling Valley and Khumbu, across the Hongu, a high-altitude climbing week, then West Col and Sherpani Col to Makalu Base Camp and Tumlingtar.</p>
+    <div class="meta"><div><b>47</b><span>Days</span></div><div><b>5,845 m</b><span>Highest named pass</span></div><div><b>6,500–6,700 m</b><span>Expedition peak</span></div><div><b>4</b><span>Route regions</span></div></div>
+   </div>
+   <div class="nepal" aria-label="Schematic Nepal route">
+    <svg viewBox="0 0 520 230" role="img">
+     <path class="outline" d="M28 91 L58 70 93 76 118 61 151 72 182 66 214 83 245 79 274 94 308 88 337 101 371 96 397 111 430 105 470 120 491 145 465 158 428 153 396 165 360 156 331 167 299 155 265 164 231 151 199 158 169 143 135 151 109 136 75 140 52 121 31 119 Z"/>
+     <path class="route" d="M104 125 C143 111,161 126,195 111 S252 104,281 119 S334 122,364 132 S414 134,448 146"/>
+     <circle class="dot" cx="104" cy="125" r="5"/><circle class="dot" cx="195" cy="111" r="4"/><circle class="dot" cx="281" cy="119" r="4"/><circle class="dot" cx="364" cy="132" r="4"/><circle class="dot" cx="448" cy="146" r="5"/>
+     <text class="label" x="87" y="151">ROLWALING</text><text class="label" x="183" y="94">KHUMBU</text><text class="label" x="275" y="102">HONGU</text><text class="label" x="386" y="119">MAKALU</text>
+    </svg>
+   </div>
+  </div>
+ </div>
+</header>
+
 <main>
-<section class="wrap" id="route"><div class="eyebrow">26 September – 11 November 2026</div><h2>The Expedition Route</h2><p class="intro">From Chetchet into the Rolwaling Valley, across Tashi Lapcha to the Khumbu, through the Hongu Valley and an additional high-altitude climbing week, then across West Col and Sherpani Col to Makalu Base Camp before descending to Tumlingtar.</p>
-<div class="mapgrid"><article class="panel"><div class="panelhead"><h3>Planned Route</h3><p>Interactive Google My Maps route and waypoints.</p></div><iframe class="frame" title="Rolwaling to Makalu planned route" src="https://www.google.com/maps/d/embed?mid=1G0UML04gTbzW4QuVbBuIo6lR7fnK_k0&ehbc=2E312F"></iframe><div class="actions"><a class="button" target="_blank" rel="noopener" href="https://www.google.com/maps/d/viewer?mid=1G0UML04gTbzW4QuVbBuIo6lR7fnK_k0">Open full route</a><a class="button" href="route.gpx">Download GPX</a></div></article>
-<article class="panel" id="live"><div class="panelhead"><h3>Live Expedition Tracking</h3><p>Current position and satellite tracking via Garmin MapShare.</p></div><div class="garmin"><div class="big">Live position on Garmin MapShare</div><p>The Garmin page is kept separate from the planned route so the live satellite track remains clear and authoritative during the expedition.</p><a class="button" target="_blank" rel="noopener" href="https://share.garmin.com/radventuretravel">View live Garmin tracking</a><div class="today" id="status">Expedition starts 26 September 2026</div></div></article></div></section>
-<section class="wrap itin" id="itinerary"><div class="eyebrow">47 days</div><h2>Itinerary</h2><div class="regions"><div class="region r1"><b>Rolwaling</b>Days 1–10</div><div class="region r2"><b>Khumbu / Everest</b>Days 11–20</div><div class="region r3"><b>Hongu & Expedition Peak</b>Days 21–34</div><div class="region r4"><b>Sherpani & Makalu</b>Days 35–47</div></div><div class="days" id="days"></div></section>
+<section class="section white" id="profile"><div class="shell">
+ <div class="eyebrow">Interactive route profile</div><h2>High route</h2>
+ <p class="sub">Select a pass, summit area or destination to bring its position into focus. The profile is a visual route overview rather than a surveyed elevation trace.</p>
+ <div class="elev-wrap">
+  <div class="regionbar"><div class="rb1">Rolwaling · Days 1–10</div><div class="rb2">Khumbu / Everest · 11–20</div><div class="rb3">Hongu & Expedition Peak · 21–34</div><div class="rb4">Sherpani & Makalu · 35–47</div></div>
+  <div class="chart" id="chart">
+   <svg viewBox="0 0 1200 320" preserveAspectRatio="none">
+    <defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8c7e2" stop-opacity=".85"/><stop offset="1" stop-color="#edf1f6" stop-opacity=".15"/></linearGradient></defs>
+    <line class="gridline" x1="0" y1="250" x2="1200" y2="250"/><line class="gridline" x1="0" y1="170" x2="1200" y2="170"/><line class="gridline" x1="0" y1="90" x2="1200" y2="90"/>
+    <path class="profile" d="M10 262 L75 245 L120 210 L155 220 L205 105 L245 212 L295 226 L345 126 L390 211 L430 180 L470 128 L515 213 L555 196 L605 116 L650 215 L700 185 L755 72 L800 170 L845 224 L895 153 L930 97 L970 203 L1015 94 L1055 198 L1100 137 L1145 220 L1190 258 L1190 310 L10 310 Z"/>
+    <g class="peak" data-id="tashi" transform="translate(205 105)"><circle r="5"/><text x="-34" y="-15">Tashi Lapcha</text></g>
+    <g class="peak" data-id="renjo" transform="translate(345 126)"><circle r="5"/><text x="-20" y="-15">Renjo La</text></g>
+    <g class="peak" data-id="chola" transform="translate(470 128)"><circle r="5"/><text x="-18" y="-15">Cho La</text></g>
+    <g class="peak" data-id="amphu" transform="translate(605 116)"><circle r="5"/><text x="-30" y="-15">Amphu Laptsa</text></g>
+    <g class="peak" data-id="peak" transform="translate(755 72)"><circle r="5"/><text x="-34" y="-15">Expedition Peak</text></g>
+    <g class="peak" data-id="west" transform="translate(930 97)"><circle r="5"/><text x="-20" y="-15">West Col</text></g>
+    <g class="peak" data-id="sherpani" transform="translate(1015 94)"><circle r="5"/><text x="-30" y="-15">Sherpani Col</text></g>
+    <g class="peak" data-id="makalu" transform="translate(1100 137)"><circle r="5"/><text x="-24" y="-15">Makalu BC</text></g>
+   </svg>
+   <div class="tooltip" id="tip"></div>
+  </div>
+ </div>
+ <div class="destinations" id="destinations"></div>
+</div></section>
+
+<section class="section" id="map"><div class="shell">
+ <div class="eyebrow">Planned route and live position</div><h2>Explore the expedition</h2>
+ <p class="sub">The planned route is shown in Google My Maps. During the expedition, Garmin MapShare remains the separate source for the live satellite position.</p>
+ <div class="explore">
+  <article class="mapcard"><div class="cardhead"><b>Interactive route map</b><p>Zoom, pan and select the route waypoints.</p></div>
+   <iframe class="mapframe" title="Rolwaling to Makalu route" loading="lazy" src="https://www.google.com/maps/d/embed?mid=1G0UML04gTbzW4QuVbBuIo6lR7fnK_k0&ehbc=2E312F"></iframe>
+   <div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/d/viewer?mid=1G0UML04gTbzW4QuVbBuIo6lR7fnK_k0">Open full route</a><a class="btn" href="route.gpx">Download GPX</a></div>
+  </article>
+  <aside class="livecard"><div class="cardhead"><b>Expedition status</b><p>Automatically updates by date.</p></div>
+   <div class="livebody"><div><h3>Live satellite tracking</h3><p>Open Garmin MapShare to see the current satellite position and tracking trail during the expedition.</p><a class="btn" target="_blank" rel="noopener" href="https://share.garmin.com/radventuretravel">View Garmin MapShare</a></div><div class="status" id="status"></div></div>
+  </aside>
+ </div>
+</div></section>
+
+<section class="section white" id="itinerary"><div class="shell">
+ <div class="eyebrow">26 September — 11 November 2026</div><h2>47 day itinerary</h2>
+ <p class="sub">Select a region to filter the itinerary. During the expedition the current day is outlined automatically.</p>
+ <div class="itin-tools" id="filters"></div><div class="days" id="days"></div>
+</div></section>
 </main>
-<footer class="footer"><div class="footerin"><div><strong>Nepal 2026</strong><p>Rolwaling · Khumbu · Hongu · Makalu</p></div><div class="small"><strong>47 Day High Himalayan Expedition & Traverse</strong><p>Planned route shown for expedition information. Live position is provided separately by Garmin MapShare.</p></div></div></footer>
+
+<footer><div class="shell foot"><div><b>Nepal 2026</b><p>Rolwaling · Khumbu · Hongu · Sherpani · Makalu</p></div><div><b>47 Day High Himalayan Expedition & Traverse</b><p>Planned route for expedition information. Live position via Garmin MapShare.</p></div></div></footer>
+
 <script>
+const points={
+ tashi:{name:'Tashi Lapcha',alt:'5,755 m',day:'Day 8 · 3 October',text:'Crossing from the Rolwaling side towards the Khumbu.'},
+ renjo:{name:'Renjo La',alt:'5,360 m',day:'Day 11 · 6 October',text:'High-pass crossing from Lungden to Gokyo.'},
+ chola:{name:'Cho La',alt:'5,420 m',day:'Day 14 · 9 October',text:'Crossing from Thangnak to Dzongla.'},
+ amphu:{name:'Amphu Laptsa',alt:'5,845 m',day:'Day 22 · 17 October',text:'Technical crossing from the Khumbu into the Hongu Valley.'},
+ peak:{name:'Expedition Peak',alt:'approx. 6,500–6,700 m',day:'Days 26–34',text:'Dedicated climbing and technical training window, including high camp and summit attempts.'},
+ west:{name:'West Col',alt:'High crossing',day:'Days 35–36',text:'Positioning and crossing towards the Sherpani section.'},
+ sherpani:{name:'Sherpani Col',alt:'High crossing',day:'Day 37 · 1 November',text:'Crossing onto the Makalu side of the traverse.'},
+ makalu:{name:'Makalu Base Camp',alt:'approx. 4,450 m',day:'Days 38–40',text:'Recovery, exploration and the start of the descent towards Tumlingtar.'}
+};
+const destOrder=['tashi','renjo','chola','amphu','peak','west','sherpani','makalu'];
+const destinations=document.getElementById('destinations');
+destOrder.forEach(id=>{const p=points[id],b=document.createElement('button');b.className='dest';b.dataset.id=id;b.innerHTML=`<small>${p.day}</small><b>${p.name}</b><span>${p.alt}</span>`;b.onclick=()=>selectPoint(id);destinations.appendChild(b)});
+const tip=document.getElementById('tip'), chart=document.getElementById('chart');
+function selectPoint(id){
+ document.querySelectorAll('.peak,.dest').forEach(x=>x.classList.toggle('active',x.dataset.id===id));
+ const p=points[id], peak=document.querySelector(`.peak[data-id="${id}"]`);
+ const box=peak.getBoundingClientRect(), cb=chart.getBoundingClientRect();
+ tip.innerHTML=`<b>${p.name}</b><span>${p.alt} · ${p.day}</span><br>${p.text}`;
+ tip.style.display='block'; tip.style.left=Math.max(8,Math.min(cb.width-205,box.left-cb.left-70))+'px'; tip.style.top=Math.max(8,box.top-cb.top-92)+'px';
+}
+document.querySelectorAll('.peak').forEach(x=>{x.addEventListener('click',()=>selectPoint(x.dataset.id));x.addEventListener('mouseenter',()=>selectPoint(x.dataset.id))});
+chart.addEventListener('mouseleave',()=>{tip.style.display='none'});
+
 const itinerary=[
-['26 Sep','Chetchet to Simigaon'],['27 Sep','Simigaon to Kyalche'],['28 Sep','Kyalche to Beding'],['29 Sep','Beding to Na'],['30 Sep','Na acclimatisation / high walk'],['1 Oct','Na to Tsho Rolpa'],['2 Oct','Tsho Rolpa to Tashi Phu / Tashi Lapcha Base Camp'],['3 Oct','Cross Tashi Lapcha (5,755m) to Tashi Lapcha Phedi'],['4 Oct','Tashi Lapcha Phedi to Thyangbo'],['5 Oct','Thyangbo to Lungden'],['6 Oct','Lungden via Renjo La (5,360m) to Gokyo'],['7 Oct','Gokyo acclimatisation / Gokyo Ri'],['8 Oct','Gokyo to Thangnak'],['9 Oct','Thangnak via Cho La (5,420m) to Dzongla'],['10 Oct','Dzongla to Lobuche'],['11 Oct','Lobuche acclimatisation / recovery day'],['12 Oct','Lobuche to Gorak Shep, Everest Base Camp and return'],['13 Oct','Gorak Shep via Kala Patthar (5,545m) to Pheriche'],['14 Oct','Pheriche to Chhukung'],['15 Oct','Chhukung acclimatisation / technical preparation'],['16 Oct','Chhukung to Amphu Laptsa Base Camp'],['17 Oct','Cross Amphu Laptsa (5,845m) into the Hongu Valley'],['18 Oct','Hongu to Seto Pokhari'],['19 Oct','Seto Pokhari to Baruntse Base Camp'],['20 Oct','Baruntse Base Camp rest / acclimatisation and technical skills'],['21 Oct','Baruntse Base Camp to selected peak approach camp'],['22 Oct','Approach camp to climbing Base Camp'],['23 Oct','Glacier / fixed-rope training and acclimatisation climb'],['24 Oct','Peak Base Camp to High Camp / Camp 1'],['25 Oct','High Camp to higher camp / route preparation if required'],['26 Oct','Summit attempt on selected approximately 6,500–6,700m peak'],['27 Oct','Weather / second summit attempt / contingency day'],['28 Oct','Descend to Peak Base Camp'],['29 Oct','Peak Base Camp back to Baruntse / Hongu traverse route'],['30 Oct','Position camp below West Col'],['31 Oct','Cross West Col to high camp'],['1 Nov','Cross Sherpani Col to camp on the Makalu side'],['2 Nov','Sherpani / Swiss Camp area to Makalu Base Camp'],['3 Nov','Makalu Base Camp recovery / exploration and Glacier View'],['4 Nov','Makalu Base Camp to Langmale Kharka'],['5 Nov','Langmale Kharka to Yangri Kharka'],['6 Nov','Yangri Kharka to Dobato / Mumbuk'],['7 Nov','Dobato / Mumbuk to Khongma / Shipton La area'],['8 Nov','Khongma to Tashigaon'],['9 Nov','Tashigaon to Seduwa'],['10 Nov','Seduwa to Num and continue by road towards Tumlingtar'],['11 Nov','Complete transfer to Tumlingtar if required and fly to Kathmandu']];
-const days=document.getElementById('days');
-const start=Date.UTC(2026,8,26), end=Date.UTC(2026,10,11), now=new Date();
-const today=Date.UTC(now.getUTCFullYear(),now.getUTCMonth(),now.getUTCDate());
-let current=today>=start&&today<=end?Math.floor((today-start)/86400000)+1:null;
-itinerary.forEach((x,i)=>{const d=document.createElement('div');d.className='day'+(current===i+1?' current':'');d.innerHTML=`<strong>Day ${i+1}</strong><time>${x[0]}</time><span>${x[1]}</span>`;days.appendChild(d)});
+['26 Sep','Chetchet to Simigaon',1],['27 Sep','Simigaon to Kyalche',1],['28 Sep','Kyalche to Beding',1],['29 Sep','Beding to Na',1],['30 Sep','Na acclimatisation / high walk',1],['1 Oct','Na to Tsho Rolpa',1],['2 Oct','Tsho Rolpa to Tashi Phu / Tashi Lapcha Base Camp',1],['3 Oct','Cross Tashi Lapcha (5,755 m) to Tashi Lapcha Phedi',1],['4 Oct','Tashi Lapcha Phedi to Thyangbo',1],['5 Oct','Thyangbo to Lungden',1],
+['6 Oct','Lungden via Renjo La (5,360 m) to Gokyo',2],['7 Oct','Gokyo acclimatisation / Gokyo Ri',2],['8 Oct','Gokyo to Thangnak',2],['9 Oct','Thangnak via Cho La (5,420 m) to Dzongla',2],['10 Oct','Dzongla to Lobuche',2],['11 Oct','Lobuche acclimatisation / recovery day',2],['12 Oct','Lobuche to Gorak Shep, Everest Base Camp and return',2],['13 Oct','Gorak Shep via Kala Patthar (5,545 m) to Pheriche',2],['14 Oct','Pheriche to Chhukung',2],['15 Oct','Chhukung acclimatisation / technical preparation',2],
+['16 Oct','Chhukung to Amphu Laptsa Base Camp',3],['17 Oct','Cross Amphu Laptsa (5,845 m) into the Hongu Valley',3],['18 Oct','Hongu to Seto Pokhari',3],['19 Oct','Seto Pokhari to Baruntse Base Camp',3],['20 Oct','Baruntse Base Camp rest / acclimatisation and technical skills',3],['21 Oct','Baruntse Base Camp to selected peak approach camp',3],['22 Oct','Approach camp to climbing Base Camp',3],['23 Oct','Glacier / fixed-rope training and acclimatisation climb',3],['24 Oct','Peak Base Camp to High Camp / Camp 1',3],['25 Oct','High Camp to higher camp / route preparation if required',3],['26 Oct','Summit attempt on selected approximately 6,500–6,700 m peak',3],['27 Oct','Weather / second summit attempt / contingency day',3],['28 Oct','Descend to Peak Base Camp',3],['29 Oct','Peak Base Camp back to Baruntse / Hongu traverse route',3],
+['30 Oct','Position camp below West Col',4],['31 Oct','Cross West Col to high camp',4],['1 Nov','Cross Sherpani Col to camp on the Makalu side',4],['2 Nov','Sherpani / Swiss Camp area to Makalu Base Camp',4],['3 Nov','Makalu Base Camp recovery / exploration and Glacier View',4],['4 Nov','Makalu Base Camp to Langmale Kharka',4],['5 Nov','Langmale Kharka to Yangri Kharka',4],['6 Nov','Yangri Kharka to Dobato / Mumbuk',4],['7 Nov','Dobato / Mumbuk to Khongma / Shipton La area',4],['8 Nov','Khongma to Tashigaon',4],['9 Nov','Tashigaon to Seduwa',4],['10 Nov','Seduwa to Num and continue by road towards Tumlingtar',4],['11 Nov','Complete transfer to Tumlingtar if required and fly to Kathmandu',4]];
+const regionNames=['All','Rolwaling','Khumbu / Everest','Hongu & Expedition Peak','Sherpani & Makalu'];
+const days=document.getElementById('days'),filters=document.getElementById('filters');
+const start=Date.UTC(2026,8,26),end=Date.UTC(2026,10,11),n=new Date(),today=Date.UTC(n.getUTCFullYear(),n.getUTCMonth(),n.getUTCDate());
+const current=today>=start&&today<=end?Math.floor((today-start)/86400000)+1:null;
+function render(region=0){days.innerHTML='';itinerary.forEach((x,i)=>{if(region&&x[2]!==region)return;const d=document.createElement('article');d.className='day'+(current===i+1?' current':'');d.innerHTML=`<div class="num">Day<b>${i+1}</b></div><div><time>${x[0]}</time><div class="desc">${x[1]}</div><div class="tag r${x[2]}">${regionNames[x[2]]}</div></div>`;days.appendChild(d)})}
+regionNames.forEach((r,i)=>{const b=document.createElement('button');b.className='filter'+(i===0?' active':'');b.textContent=r;b.onclick=()=>{document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');render(i)};filters.appendChild(b)});render();
 const status=document.getElementById('status');
-if(today<start){const n=Math.ceil((start-today)/86400000);status.textContent=`Expedition starts in ${n} day${n===1?'':'s'} · 26 September 2026`;}
-else if(today>end){status.textContent='Expedition completed · 11 November 2026';}
-else{status.textContent=`Day ${current} · ${itinerary[current-1][0]} · ${itinerary[current-1][1]}`;}
+if(today<start){const left=Math.ceil((start-today)/86400000);status.innerHTML=`<div class="dayno">${left}</div><div class="route-day">days until departure<br><b>26 September 2026</b> · Chetchet to Simigaon</div>`}
+else if(today>end){status.innerHTML=`<div class="dayno">47</div><div class="route-day">Expedition completed<br><b>11 November 2026</b> · Tumlingtar / Kathmandu</div>`}
+else{status.innerHTML=`<div class="dayno">${current}</div><div class="route-day"><b>${itinerary[current-1][0]}</b><br>${itinerary[current-1][1]}</div>`}
 </script>
 </body></html>
